@@ -12,7 +12,7 @@ Acesse aqui 👉 [carlosfelixpenha-create.github.io/Portfolio](https://carlosfel
 
 ### 🧪 QAPlayground
 Plataforma dedicada à qualidade de software, criada como espaço de experimentação, aprendizado e evolução contínua.   
-Tecnologias: HTML, CSS, JavaScript, NPM, Prettier, GitHub Actions.    
+Tecnologias: HTML, CSS, JavaScript, NPM, Prettier, GitHub Actions.   
 🔗 Projeto em desenvolvimento — lançamento em breve!
 
 ### 🔐 MiniSistema
