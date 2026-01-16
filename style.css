@@ -136,7 +136,7 @@ footer {
   position: fixed;
   top: 50px;
   right: 100px;
-  background: var (--primary-color);
+  background: #e63946;
   color: #fff;
   border: none;
   padding: 10px 15px;
