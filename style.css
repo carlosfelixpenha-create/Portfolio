@@ -80,6 +80,49 @@ section {
   color: var(--secondary-color);
 }
 
+/* Botão Download CV */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: var(--shadow);
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: var(--secondary-color);
+}
+
+/* Barras de progresso */
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.bar {
+  background: #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 20px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.bar div {
+  height: 100%;
+  background: var(--primary-color);
+  transition: width 0.5s ease-in-out;
+}
+
 /* Rodapé */
 footer {
   margin-top: 60px;
@@ -118,4 +161,12 @@ body.dark {
 
 body.dark footer {
   color: #aaa;
+}
+
+body.dark .bar {
+  background: #333;
+}
+
+body.dark .bar div {
+  background: var(--primary-color);
 }
