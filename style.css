@@ -133,7 +133,7 @@ footer {
 
 /* Botão Dark Mode */
 #toggle-dark {
-  position: fixed;
+  position: absolute;
   top: 100px;
   right: 100px;
   background: #e63946;
