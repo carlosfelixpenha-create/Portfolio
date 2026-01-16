@@ -134,9 +134,9 @@ footer {
 /* Botão Dark Mode */
 #toggle-dark {
   position: absolute;
-  top: 100px;
-  right: 100px;
-  background: #e63946;
+  top: 100px;       /* mais abaixo */
+  right: 100px;     /* mais para a esquerda */
+  background: #e63946; /* vermelho */
   color: #fff;
   border: none;
   padding: 10px 15px;
@@ -147,7 +147,7 @@ footer {
 }
 
 #toggle-dark:hover {
-  background: var(--secondary-color);
+  background: #b71c1c; /* vermelho mais escuro no hover */
 }
 
 /* 🌙 Dark Mode */
@@ -169,4 +169,11 @@ body.dark .bar {
 
 body.dark .bar div {
   background: var(--primary-color);
+}
+
+/* Ajuste para listas */
+li {
+  margin-left: 30px;   /* recuo tipo tab */
+  padding-left: 10px;  /* espaço interno extra */
+  margin-bottom: 8px;  /* espaço entre itens */
 }
