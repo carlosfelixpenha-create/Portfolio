@@ -6,6 +6,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Botão Dark Mode -->
+  <button id="toggle-dark">🌙 Alternar</button>
+
   <h1>📂 Portfólio Profissional – Carlos Félix</h1>
 
   <!-- Sobre Mim -->
@@ -28,7 +31,9 @@
       <p>
         Plataforma dedicada à qualidade de software, criada como espaço de experimentação, aprendizado e evolução contínua.<br>
         Tecnologias: HTML, CSS, JavaScript, NPM, Prettier, GitHub Actions.<br>
-        <strong>Status: Em desenvolvimento - lançamento em breve!</strong>🎉</p>
+        <strong>Status: Em desenvolvimento - lançamento em breve!</strong> 🎉
+      </p>
+      <a href="https://carlosfelixpenha-create.github.io/QAPlayground/" target="_blank">🔗 Acessar QAPlayground</a>
     </div>
 
     <div class="projeto">
@@ -107,12 +112,19 @@
   <section>
     <h2>📬 Contato</h2>
     <p>
-      - 📧 Email: carlosfelixpenha@gmail.com<br>
-      - 📱 Cel: (41) 99583-0881<br>
+      - 📧 Email: <a href="mailto:carlosfelixpenha@gmail.com">carlosfelixpenha@gmail.com</a><br>
+      - 📱 Cel: <a href="tel:+5541995830881">(41) 99583-0881</a><br>
       - 🔗 LinkedIn: <a href="https://www.linkedin.com/in/carlos-félix-9427676b" target="_blank">linkedin.com/in/carlos-félix-9427676b</a><br>
       - 💻 GitHub: <a href="https://github.com/carlosfelixpenha-create" target="_blank">github.com/carlosfelixpenha-create</a>
     </p>
   </section>
 
+  <!-- Script Dark Mode -->
+  <script>
+    const btn = document.getElementById('toggle-dark');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
 </body>
 </html>
