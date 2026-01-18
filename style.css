@@ -177,3 +177,15 @@ li {
   padding-left: 10px;  /* espaço interno extra */
   margin-bottom: 8px;  /* espaço entre itens */
 }
+
+/* Badge com sombra */
+.badge-highlight {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* sombra mais intensa */
+  border-radius: 6px;                      /* cantos arredondados */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.badge-highlight:hover {
+  transform: scale(1.05);                  /* leve zoom ao passar o mouse */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);  /* sombra mais forte no hover */
+}
