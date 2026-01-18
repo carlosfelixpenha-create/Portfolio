@@ -1,4 +1,4 @@
-
+// Seleciona o botão
 const btn = document.getElementById('toggle-dark');
 
 // Verifica se já existe preferência salva
@@ -10,6 +10,7 @@ if (currentMode === 'dark') {
   btn.textContent = 'Modo Escuro';
 }
 
+// Alterna entre os modos ao clicar
 btn.addEventListener('click', () => {
   document.body.classList.toggle('dark');
 
