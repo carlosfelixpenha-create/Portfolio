@@ -135,7 +135,7 @@ footer {
 #toggle-dark {
   position: absolute;
   top: 65px;       /* mais abaixo */
-  right: 80px;     /* mais para a esquerda */
+  right: 70px;     /* mais para a esquerda */
   background: #e63946; /* vermelho */
   color: #fff;
   border: none;
