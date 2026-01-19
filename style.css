@@ -124,7 +124,7 @@ section {
   background: var(--primary-color);
   transition: width 0.5s ease-in-out;
   text-align: left;       /* texto alinhado à esquerda */
-  padding-right: 8px;      /* espaço interno */
+  padding-left: 6px;      /* espaço interno */
   color: #fff;             /* cor do texto */
   font-weight: bold;       /* destaque */
 }
