@@ -29,7 +29,7 @@ body {
 /* Cabeçalhos */
 h1 {
   text-align: center;
-  background: var(--primary-color);
+  background: linear-gradient(to bottom, #023e8a, #007acc, #4dabf7);
   color: #fff;
   padding: 20px;
   margin-bottom: 30px;
