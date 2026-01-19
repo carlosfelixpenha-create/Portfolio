@@ -13,6 +13,7 @@
   --secondary-color: #023e8a;
   --text-color: #333;
   --shadow: 0 4px 8px rgba(0,0,0,0.1);
+  --project-bg: #f0f8ff; /* nova variável para projetos */
 }
 
 /* Corpo da página */
@@ -56,8 +57,9 @@ section {
   margin-bottom: 20px;
   border-left: 4px solid var(--primary-color);
   padding-left: 15px;
-  background: #f0f8ff;
+  background: var(--project-bg); /* usa variável exclusiva */
   border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .projeto h3 {
@@ -157,6 +159,7 @@ body.dark {
   --text-color: #e0e0e0;
   --primary-color: #4dabf7;
   --secondary-color: #1c7ed6;
+  --project-bg: #2a2a2a; /* versão escura para projetos */
 }
 
 body.dark footer {
