@@ -123,12 +123,14 @@ section {
   height: 100%;
   background: var(--primary-color);
   transition: width 0.5s ease-in-out;
-  text-align: left;       /* texto alinhado à esquerda */
-  padding-left: 6px;      /* espaço interno à esquerda */
+  text-align: right;       /* texto alinhado à direita */
+  padding-right: 6px;      /* espaço interno à direita */
   color: #fff;            /* cor do texto */
   font-weight: bold;      /* destaque */
   display: flex;          /* garante alinhamento vertical */
   align-items: center;    /* centraliza o texto verticalmente */
+  justify-content: flex-end; /* força o texto para o fim da barra */
+
 }
 
 /* Rodapé */
