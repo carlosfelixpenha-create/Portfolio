@@ -123,7 +123,7 @@ section {
   height: 100%;
   background: var(--primary-color);
   transition: width 0.5s ease-in-out;
-  text-align: right;       /* texto alinhado à direita */
+  text-align: left;       /* texto alinhado à direita */
   padding-right: 8px;      /* espaço interno */
   color: #fff;             /* cor do texto */
   font-weight: bold;       /* destaque */
