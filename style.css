@@ -49,6 +49,7 @@ h1 {
 /* Modo escuro */
 body.dark-mode .subtitle {
   color: #f5f5f5; /* texto claro no dark mode */
+  text-align: center; /* mantém centralizado */
 }
 
 h2,
