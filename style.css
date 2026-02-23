@@ -12,7 +12,7 @@
   --primary-color: #007acc;
   --secondary-color: #023e8a;
   --text-color: #333;
-  --shadow: 0 4px 8px rgba(0,0,0,0.1);
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   --project-bg: #f0f8ff; /* nova variável para projetos */
 }
 
@@ -23,7 +23,9 @@ body {
   color: var(--text-color);
   padding: 40px;
   line-height: 1.6;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 /* Cabeçalhos */
@@ -37,7 +39,20 @@ h1 {
   box-shadow: var(--shadow);
 }
 
-h2, h3 {
+.subtitle {
+  font-size: 1.2rem;
+  color: #555555;
+  margin-top: 5px;
+  text-align: center;
+  font-weight: 400;
+}
+/* Modo escuro */
+body.dark-mode .subtitle {
+  color: #f5f5f5; /* texto claro no dark mode */
+}
+
+h2,
+h3 {
   color: var(--primary-color);
   margin-bottom: 10px;
   transition: color 0.3s;
@@ -59,7 +74,9 @@ section {
   padding-left: 15px;
   background: var(--project-bg); /* usa variável exclusiva */
   border-radius: 8px;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 .projeto h3 {
@@ -116,21 +133,20 @@ section {
   border-radius: 6px;
   overflow: hidden;
   height: 20px;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .bar div {
   height: 100%;
   background: var(--primary-color);
   transition: width 0.5s ease-in-out;
-  text-align: right;       /* texto alinhado à direita */
-  padding-right: 6px;      /* espaço interno à direita */
-  color: #fff;            /* cor do texto */
-  font-weight: bold;      /* destaque */
-  display: flex;          /* garante alinhamento vertical */
-  align-items: center;    /* centraliza o texto verticalmente */
+  text-align: right; /* texto alinhado à direita */
+  padding-right: 6px; /* espaço interno à direita */
+  color: #fff; /* cor do texto */
+  font-weight: bold; /* destaque */
+  display: flex; /* garante alinhamento vertical */
+  align-items: center; /* centraliza o texto verticalmente */
   justify-content: flex-end; /* força o texto para o fim da barra */
-
 }
 
 /* Rodapé */
@@ -144,8 +160,8 @@ footer {
 /* Botão Dark Mode */
 #toggle-dark {
   position: absolute;
-  top: 67px;       /* mais abaixo */
-  right: 67px;     /* mais para a esquerda */
+  top: 67px; /* mais abaixo */
+  right: 67px; /* mais para a esquerda */
   background: #e63946; /* vermelho */
   color: #fff;
   border: none;
@@ -184,19 +200,21 @@ body.dark .bar div {
 
 /* Ajuste para listas */
 li {
-  margin-left: 30px;   /* recuo tipo tab */
-  padding-left: 10px;  /* espaço interno extra */
-  margin-bottom: 8px;  /* espaço entre itens */
+  margin-left: 30px; /* recuo tipo tab */
+  padding-left: 10px; /* espaço interno extra */
+  margin-bottom: 8px; /* espaço entre itens */
 }
 
 /* Badge com sombra */
 .badge-highlight {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5); /* sombra mais intensa */
-  border-radius: 6px;                      /* cantos arredondados */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* sombra mais intensa */
+  border-radius: 6px; /* cantos arredondados */
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .badge-highlight:hover {
-  transform: scale(1.05);                  /* leve zoom ao passar o mouse */
-  box-shadow: 0 6px 16px rgba(0,0,0,0.4);  /* sombra mais forte no hover */
+  transform: scale(1.05); /* leve zoom ao passar o mouse */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4); /* sombra mais forte no hover */
 }
