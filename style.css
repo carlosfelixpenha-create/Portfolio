@@ -214,3 +214,70 @@ li {
   transform: scale(1.05); /* leve zoom ao passar o mouse */
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4); /* sombra mais forte no hover */
 }
+/* ===== AJUSTES PARA PDF / IMPRESSÃO ===== */
+@media print {
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+
+  body {
+    padding: 0;
+    background: #ffffff;
+    color: #000000;
+  }
+
+  /* Remove elementos que não fazem sentido no PDF */
+  .btn,
+  #toggle-dark {
+    display: none;
+  }
+
+  /* Remove sombras para evitar visual pesado no PDF */
+  section,
+  h1,
+  .badge-highlight {
+    box-shadow: none;
+  }
+
+  /* Evita quebrar seção no meio da página */
+  section,
+  .projeto,
+  .skill {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Evita títulos ficarem sozinhos no final da página */
+  h2,
+  h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /* Remove animações/transições */
+  * {
+    transition: none !important;
+  }
+}
+/* Ajuste específico para barras no PDF */
+@media print {
+  .bar {
+    background: #cccccc !important;
+    height: 16px;
+  }
+
+  .bar div {
+    background: #000000 !important;
+    color: #ffffff !important;
+    font-size: 12px;
+    justify-content: center; /* centraliza o texto */
+  }
+
+  /* Evita quebrar skill no meio */
+  .skill {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 15px;
+  }
+}
